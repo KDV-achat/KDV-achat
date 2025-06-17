@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Packs - Achat Revente Moto</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #111; color: #eee; }
+    header, footer { background-color: #000; text-align: center; padding: 2rem; color: white; }
+    nav { display: flex; justify-content: center; background-color: #1a1a1a; }
+    nav a { color: white; padding: 1rem 2rem; text-decoration: none; transition: background 0.3s; }
+    nav a:hover { background-color: #333; }
+    section { padding: 4rem 2rem; text-align: center; }
+    h2 { font-size: 2.5rem; margin-bottom: 2rem; }
+    .pack {
+      background-size: cover;
+      background-position: center;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s;
+    }
+    .pack:hover { transform: scale(1.02); }
+    .pack-content { background: rgba(27, 27, 27, 0.9); padding: 2rem; border-radius: 12px; }
+    .pack img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; display: none; }
+    .pack h3 { margin-top: 1rem; font-size: 1.8rem; color: #fff; }
+    .pack p { color: #ccc; font-size: 1.1rem; margin-top: 1rem; }
+
+    .packs-preview {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+    .pack-card {
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 300px;
+      min-height: 400px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #fff;
+    }
+    .pack-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #000;
+    }
+    .pack-card h3, .pack-card p {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 0;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nos Packs</h1>
+    <p>Choisissez le niveau de service qui vous correspond</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="packs.html">Nos Packs</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="pack1" class="pack" style="background-image: url('image1loupe.png');">
+    <div class="pack-content">
+      <h3>Pack 1 : Recherche & Négociation -  199€</h3>
+      <p>Vous nous donnez vos critères (type de moto, budget, localisation) et nous faisons tout pour trouver la meilleure moto ou scooter pour vous. Nous contactons les vendeurs et négocions les prix pour vous obtenir les meilleures conditions.</p>
+    </div>
+  </section>
+
+  <section id="pack2" class="pack" style="background-image: url('image2garage.JPG');">
+    <div class="pack-content">
+      <h3>Pack 2 : + Expertise mécanique - 249€</h3>
+      <p>En plus du service du Pack 1, le véhicule que nous avons trouvé est contrôlé dans un garage partenaire. Vous avez un rapport clair sur l’état de la moto ou du scooter, pour acheter en toute confiance.</p>
+    </div>
+  </section>
+
+  <section id="pack3" class="pack" style="background-image: url('image3transport.JPEG');">
+    <div class="pack-content">
+      <h3>Pack 3 : Livraison à domicile - 449€(hors idf) </h3>
+      <p>Le service tout compris : nous cherchons, négocions, expertisons et livrons le véhicule à votre adresse. Vous recevez votre moto prête à rouler, sans vous déplacer ni gérer quoi que ce soit. C’est simple, rapide et 100% confort.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Achat Revente Moto — Tous droits réservés
+  </footer>
+</body>
+</html>
